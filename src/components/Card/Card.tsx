@@ -10,7 +10,7 @@ const Card: React.FC<CardProps> = ({ balance, setBalance }) => {
         <div className={classes.card}>
             <div className={classes.card__block}>
                 <p>CRYPTO-CARD</p>
-                <button onClick={() => setBalance((prev) => balance + 1000)}>
+                <button onClick={() => setBalance((prev) => prev + 1000)}>
                     Add Money
                 </button>
             </div>
