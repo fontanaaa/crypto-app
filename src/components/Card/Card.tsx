@@ -1,12 +1,10 @@
 import classes from "@/styles/blocks/_card.module.scss";
 import CardButton from "../CardButton/CardButton";
+import { useBalance } from "@/context/BalanceContext";
 
-interface CardProps {
-    balance: number;
-    setBalance: React.Dispatch<React.SetStateAction<number>>;
-}
+const Card: React.FC = () => {
+    const { balance, setBalance } = useBalance();
 
-const Card: React.FC<CardProps> = ({ balance, setBalance }) => {
     return (
         <div className={classes.card}>
             <div className={classes.card__block}>
