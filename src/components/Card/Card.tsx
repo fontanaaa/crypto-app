@@ -1,4 +1,5 @@
 import classes from "@/styles/blocks/_card.module.scss";
+import CardButton from "../CardButton/CardButton";
 
 interface CardProps {
     balance: number;
@@ -10,9 +11,9 @@ const Card: React.FC<CardProps> = ({ balance, setBalance }) => {
         <div className={classes.card}>
             <div className={classes.card__block}>
                 <p>CRYPTO-CARD</p>
-                <button onClick={() => setBalance((prev) => prev + 1000)}>
+                <CardButton onClick={() => setBalance((prev) => prev + 1000)}>
                     Add Money
-                </button>
+                </CardButton>
             </div>
 
             <div className={classes.card__block}>
