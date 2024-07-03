@@ -1,9 +1,14 @@
 import classes from "@/styles/blocks/_card.module.scss";
 import CardButton from "../CardButton/CardButton";
 import { useBalance } from "@/context/BalanceContext";
+import { useEffect } from "react";
 
 const Card: React.FC = () => {
     const { balance, setBalance } = useBalance();
+
+    useEffect(() => {
+        console.log("i am useEffect", balance);
+    }, [balance]);
 
     return (
         <div className={classes.card}>

@@ -1,0 +1,56 @@
+.coinList {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    gap: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 50%;
+
+    & h1 {
+        margin-bottom: 20px;
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    & ul {
+        padding: 0;
+    }
+
+    & li {
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+
+    & p {
+        font-size: 18px;
+        color: #666;
+        text-align: center;
+    }
+}
+
+.coinListItem {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    width: 100%;
+    background-color: aliceblue;
+    border-radius: 12px;
+    gap: 12px;
+}
+
+.coinListItemInfo {
+    display: flex;
+    gap: 12px;
+}
+
+.coinListItemLogo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.coinListItemPrice {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 6px;
+}
